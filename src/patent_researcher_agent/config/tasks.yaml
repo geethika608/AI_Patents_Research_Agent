@@ -1,0 +1,40 @@
+fetch_patents:
+  description: >
+    Fetch and summarize patents filed in the last 3 years for {research_area}.
+    Return structured list with title, abstract, detailed summary, year, inventors, assignee, classification.
+    
+    CRITICAL INSTRUCTIONS:
+    1. FIRST check if patents for {research_area} are already available in memory or context
+    2. If patents are found in memory/context, use those and DO NOT perform any new searches
+    3. Only use the Conditional Patent Search tool if no patents are found in memory/context
+    4. Always prioritize existing data over new searches to avoid redundancy
+  expected_output: >
+    List of patent entries, each as a dict with metadata fields.
+  agent: fetcher_agent
+  output_file: output/patents_data.json
+
+analyze_innovation:
+  description: >
+    Analyze the patent entries to identify emerging topics, key innovation areas,
+    trending keywords, top assignees, and forward-looking innovation ideas.
+    
+    CRITICAL INSTRUCTIONS:
+    1. FIRST check if trends for {research_area} are already available in memory or context
+    2. If trends are found in memory/context, use those and DO NOT perform any new searches
+    3. Only use the Conditional Patent Search tool if additional information is needed and not available in memory
+    4. Always prioritize existing analysis over new searches to avoid redundancy
+  expected_output: >
+    JSON summary: {topics: [...], keywords: [...], innovation_clusters: [...], insights: [...]}
+  agent: analyzer_agent
+  output_file: output/trends_summary.json
+
+generate_report:
+  description: >
+    Using the trend summary, prepare a polished report that includes:
+    1. summary of key findings,
+    2. detailed innovation insights along with the patents that support the insights,
+    3. strategic recommendations for future technology investment.
+  expected_output: >
+    Final report in Markdown, suitable for business stakeholders.
+  agent: reporter_agent
+  output_file: output/innovation_report.md

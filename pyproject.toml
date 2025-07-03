@@ -1,0 +1,31 @@
+[project]
+name = "patent_researcher_agent"
+version = "0.1.0"
+description = "patent_researcher_agent using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.134.0,<1.0.0",
+    "langchain-groq>=0.1.0",
+    "langchain-huggingface>=0.1.0",
+    "sentence-transformers>=2.0.0",
+    "gradio>=4.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "structlog>=23.0.0"
+]
+
+[project.scripts]
+patent_researcher_agent = "patent_researcher_agent.main:run"
+run_crew = "patent_researcher_agent.main:run"
+train = "patent_researcher_agent.main:train"
+replay = "patent_researcher_agent.main:replay"
+test = "patent_researcher_agent.main:test"
+chat = "patent_researcher_agent.main:launch_chat"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
