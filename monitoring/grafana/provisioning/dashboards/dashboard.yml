@@ -1,0 +1,12 @@
+apiVersion: 1
+
+providers:
+  - name: 'patent_agent_dashboards'
+    orgId: 1
+    folder: 'Patent Research Agent'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards 

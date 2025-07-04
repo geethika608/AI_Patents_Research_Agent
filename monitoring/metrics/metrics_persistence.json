@@ -1,0 +1,1344 @@
+{
+  "timestamp": 1751650341.306628,
+  "metrics": [
+    {
+      "name": "python_gc_objects_collected_total",
+      "labels": {
+        "generation": "0"
+      },
+      "value": 10480.0
+    },
+    {
+      "name": "python_gc_objects_collected_total",
+      "labels": {
+        "generation": "1"
+      },
+      "value": 1941.0
+    },
+    {
+      "name": "python_gc_objects_collected_total",
+      "labels": {
+        "generation": "2"
+      },
+      "value": 16427.0
+    },
+    {
+      "name": "python_gc_objects_uncollectable_total",
+      "labels": {
+        "generation": "0"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "python_gc_objects_uncollectable_total",
+      "labels": {
+        "generation": "1"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "python_gc_objects_uncollectable_total",
+      "labels": {
+        "generation": "2"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "python_gc_collections_total",
+      "labels": {
+        "generation": "0"
+      },
+      "value": 1380.0
+    },
+    {
+      "name": "python_gc_collections_total",
+      "labels": {
+        "generation": "1"
+      },
+      "value": 125.0
+    },
+    {
+      "name": "python_gc_collections_total",
+      "labels": {
+        "generation": "2"
+      },
+      "value": 9.0
+    },
+    {
+      "name": "python_info",
+      "labels": {
+        "implementation": "CPython",
+        "major": "3",
+        "minor": "12",
+        "patchlevel": "11",
+        "version": "3.12.11"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.005",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.01",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.025",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.05",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.075",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.1",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.25",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "0.75",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "1.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "2.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "5.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "7.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "10.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "le": "+Inf",
+        "status": "success"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_count",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "status": "success"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_sum",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "status": "success"
+      },
+      "value": 15.96390414237976
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.005",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.01",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.025",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.05",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.075",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.1",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.25",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "0.75",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "1.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "2.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "5.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "7.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "10.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "le": "+Inf",
+        "status": "success"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_count",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "status": "success"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_sum",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "status": "success"
+      },
+      "value": 14.170668840408325
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.005",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.01",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.025",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.05",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.075",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.1",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.25",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "0.75",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "1.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "2.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "5.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "7.5",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "10.0",
+        "status": "success"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_bucket",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "le": "+Inf",
+        "status": "success"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_count",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "status": "success"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_sum",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "status": "success"
+      },
+      "value": 12.676759958267212
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_created",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "status": "success"
+      },
+      "value": 1751650255.672242
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_created",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "status": "success"
+      },
+      "value": 1751650271.4612281
+    },
+    {
+      "name": "patent_agent_execution_duration_seconds_created",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "status": "success"
+      },
+      "value": 1751650284.973488
+    },
+    {
+      "name": "patent_agent_executions_total",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "status": "success"
+      },
+      "value": 8.0
+    },
+    {
+      "name": "patent_agent_executions_total",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "status": "success"
+      },
+      "value": 8.0
+    },
+    {
+      "name": "patent_agent_executions_total",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "status": "success"
+      },
+      "value": 8.0
+    },
+    {
+      "name": "patent_agent_executions_created",
+      "labels": {
+        "agent_name": "fetcher_agent",
+        "status": "success"
+      },
+      "value": 1751650221.24049
+    },
+    {
+      "name": "patent_agent_executions_created",
+      "labels": {
+        "agent_name": "analyzer_agent",
+        "status": "success"
+      },
+      "value": 1751650221.241139
+    },
+    {
+      "name": "patent_agent_executions_created",
+      "labels": {
+        "agent_name": "reporter_agent",
+        "status": "success"
+      },
+      "value": 1751650221.241792
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.005",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.01",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.025",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.05",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.075",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.1",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.25",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.5",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.75",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "1.0",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "2.5",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "5.0",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "7.5",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "10.0",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "+Inf",
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_count",
+      "labels": {
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_sum",
+      "labels": {
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 18.31069588661194
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.005",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.01",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.025",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.05",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.075",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.1",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.25",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.5",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.75",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "1.0",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "2.5",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "5.0",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "7.5",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "10.0",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "+Inf",
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_count",
+      "labels": {
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_sum",
+      "labels": {
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 15.778874158859253
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.005",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.01",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.025",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.05",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.075",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.1",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.25",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.5",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "0.75",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "1.0",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "2.5",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "5.0",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "7.5",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "10.0",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_bucket",
+      "labels": {
+        "le": "+Inf",
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_count",
+      "labels": {
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_sum",
+      "labels": {
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 13.49792218208313
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_created",
+      "labels": {
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 1751650255.6801548
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_created",
+      "labels": {
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 1751650271.469512
+    },
+    {
+      "name": "patent_task_execution_duration_seconds_created",
+      "labels": {
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 1751650284.979799
+    },
+    {
+      "name": "patent_task_executions_total",
+      "labels": {
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 8.0
+    },
+    {
+      "name": "patent_task_executions_total",
+      "labels": {
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 8.0
+    },
+    {
+      "name": "patent_task_executions_total",
+      "labels": {
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 8.0
+    },
+    {
+      "name": "patent_task_executions_created",
+      "labels": {
+        "status": "success",
+        "task_name": "fetch_patents"
+      },
+      "value": 1751650221.244389
+    },
+    {
+      "name": "patent_task_executions_created",
+      "labels": {
+        "status": "success",
+        "task_name": "analyze_trends"
+      },
+      "value": 1751650221.2452428
+    },
+    {
+      "name": "patent_task_executions_created",
+      "labels": {
+        "status": "success",
+        "task_name": "generate_report"
+      },
+      "value": 1751650221.246054
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.005",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.01",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.025",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.05",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.075",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.1",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.25",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.5",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "0.75",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "1.0",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "2.5",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "5.0",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "7.5",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "10.0",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 0.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_bucket",
+      "labels": {
+        "le": "+Inf",
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_count",
+      "labels": {
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_duration_seconds_sum",
+      "labels": {
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 47.643340826034546
+    },
+    {
+      "name": "patent_workflow_duration_seconds_created",
+      "labels": {
+        "status": "success",
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 1751650284.988718
+    },
+    {
+      "name": "patent_workflow_success_rate",
+      "labels": {
+        "workflow_id": "4dafa93a-23b3-4d57-8848-5e350c4dcf0d"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_success_rate",
+      "labels": {
+        "workflow_id": "1d70acb4-f28e-4bb8-8ad3-195ed4ec617f"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_success_rate",
+      "labels": {
+        "workflow_id": "a1a5b42a-e455-4022-aa92-51b3c0e91264"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_success_rate",
+      "labels": {
+        "workflow_id": "3bfcc238-5a36-4b39-98bd-242080bfe9f7"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_success_rate",
+      "labels": {
+        "workflow_id": "25c2c02e-1455-4534-b48a-51e1cd906e7b"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_success_rate",
+      "labels": {
+        "workflow_id": "6f5f5e04-ee85-4d39-ba10-c75d4ec7c037"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_success_rate",
+      "labels": {
+        "workflow_id": "b7f314dc-dab8-49ce-a3b3-264ba1b9ee6b"
+      },
+      "value": 1.0
+    },
+    {
+      "name": "patent_workflow_success_rate",
+      "labels": {
+        "workflow_id": "fd64ce2c-0d4f-4c21-a50f-558ef4088d2d"
+      },
+      "value": 1.0
+    }
+  ]
+}
