@@ -5,6 +5,8 @@ Logging configuration for Patent Research AI Agent.
 import logging
 import sys
 from typing import Optional
+import os
+from datetime import datetime
 
 # Try to import structlog, fallback to standard logging if not available
 try:
@@ -13,6 +15,59 @@ try:
 except ImportError:
     STRUCTLOG_AVAILABLE = False
     print("Warning: structlog not available, using standard logging")
+
+
+def disable_console_logging():
+    """Disable console logging globally for all loggers."""
+    # Disable console logging for the root logger
+    root_logger = logging.getLogger()
+    for handler in root_logger.handlers[:]:
+        if isinstance(handler, logging.StreamHandler) and handler.stream == sys.stdout:
+            root_logger.removeHandler(handler)
+    
+    # Set root logger to only WARNING level to suppress most output
+    root_logger.setLevel(logging.WARNING)
+    
+    # Disable console logging for common libraries and our modules
+    logger_names = [
+        'crewai', 
+        'crewai.utilities', 
+        'crewai.utilities.events',
+        'patent_researcher_agent',
+        'patent_researcher_agent.core.listeners',
+        'patent_researcher_agent.core.listeners.base_listener',
+        'patent_researcher_agent.core.listeners.agent_listener',
+        'patent_researcher_agent.core.listeners.task_listener',
+        'patent_researcher_agent.core.listeners.crew_listener',
+        'patent_researcher_agent.core.listeners.monitoring_listener'
+    ]
+    
+    for logger_name in logger_names:
+        logger = logging.getLogger(logger_name)
+        # Remove any existing StreamHandlers
+        for handler in logger.handlers[:]:
+            if isinstance(handler, logging.StreamHandler) and handler.stream == sys.stdout:
+                logger.removeHandler(handler)
+        # Set level to WARNING to suppress INFO and DEBUG
+        logger.setLevel(logging.WARNING)
+        # Prevent propagation to parent loggers
+        logger.propagate = False
+
+
+def force_disable_all_logging():
+    """Force disable all logging output to console."""
+    # Disable console logging first
+    disable_console_logging()
+    
+    # Override the basicConfig to prevent new handlers
+    logging.basicConfig(level=logging.WARNING, handlers=[])
+    
+    # Disable all existing loggers
+    for name in logging.root.manager.loggerDict:
+        logger = logging.getLogger(name)
+        logger.handlers = []
+        logger.propagate = False
+        logger.setLevel(logging.WARNING)
 
 
 def setup_logger(name: str, level: str = "INFO") -> logging.Logger:
@@ -26,6 +81,9 @@ def setup_logger(name: str, level: str = "INFO") -> logging.Logger:
     Returns:
         Configured logger
     """
+    # Disable console logging globally first
+    disable_console_logging()
+    
     if STRUCTLOG_AVAILABLE:
         return setup_structlog_logger(name, level)
     else:

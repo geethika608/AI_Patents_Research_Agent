@@ -4,6 +4,8 @@ Base event listener for monitoring CrewAI execution events.
 
 import time
 import uuid
+import logging
+import sys
 from datetime import datetime
 from typing import Dict, Any, Optional
 from crewai.utilities.events.base_event_listener import BaseEventListener
@@ -19,6 +21,13 @@ class BaseMonitoringListener(BaseEventListener):
     def __init__(self, workflow_id: str):
         self.workflow_id = workflow_id
         self.logger = setup_logger(__name__)
+        # Ensure this logger doesn't output to console
+        for handler in self.logger.handlers[:]:
+            if isinstance(handler, logging.StreamHandler) and handler.stream == sys.stdout:
+                self.logger.removeHandler(handler)
+        self.logger.setLevel(logging.WARNING)
+        self.logger.propagate = False
+        
         self.execution_data: Dict[str, Dict[str, Any]] = {}
         self.start_times: Dict[str, float] = {}
         self.is_active = True  # Track if listener is still active

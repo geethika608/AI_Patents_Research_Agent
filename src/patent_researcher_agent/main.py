@@ -2,8 +2,11 @@
 import warnings
 from datetime import datetime
 from patent_researcher_agent.launch_chat import launch_chat
-from .utils.logger import setup_logger
+from .utils.logger import setup_logger, force_disable_all_logging
 from .utils.helpers import validate_required_env_vars
+
+# Force disable all console logging at startup
+force_disable_all_logging()
 
 # Setup logger
 logger = setup_logger(__name__)
