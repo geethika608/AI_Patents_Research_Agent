@@ -5,12 +5,18 @@ Production-grade monitoring and observability for the Patent Research AI Agent.
 import time
 import functools
 import threading
+import warnings
 from typing import Dict, Any, Optional, Callable
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from collections import defaultdict, deque
 import json
 import traceback
+
+# Suppress MLflow Union type hint warnings
+warnings.filterwarnings("ignore", message="Union type hint with multiple non-None types is inferred as AnyType")
+warnings.filterwarnings("ignore", message="Union type hint is inferred as AnyType")
+warnings.filterwarnings("ignore", message="MLflow doesn't validate the data against its element types")
 
 import mlflow
 from .logger import setup_logger
@@ -33,7 +39,7 @@ class AgentMetrics:
     error_count: int = 0
     token_usage: Dict[str, int] = field(default_factory=dict)
     
-    def update(self, duration: float, success: bool, tokens: Optional[Dict[str, int]] = None):
+    def update(self, duration: float, success: bool, tokens: Optional[Dict[str, int]] = None) -> None:
         """Update metrics with execution results."""
         self.total_executions += 1
         self.total_duration += duration
@@ -65,7 +71,7 @@ class TaskMetrics:
     dependencies: list = field(default_factory=list)
     last_execution: Optional[datetime] = None
     
-    def update(self, duration: float, success: bool):
+    def update(self, duration: float, success: bool) -> None:
         """Update task metrics."""
         self.total_executions += 1
         self.total_duration += duration
@@ -92,7 +98,7 @@ class WorkflowMetrics:
     user_input: Optional[str] = None
     output_quality_score: Optional[float] = None
     
-    def complete(self, success: bool, error_message: Optional[str] = None):
+    def complete(self, success: bool, error_message: Optional[str] = None) -> None:
         """Mark workflow as completed."""
         self.end_time = datetime.now()
         self.total_duration = (self.end_time - self.start_time).total_seconds()
@@ -182,7 +188,7 @@ class PerformanceMonitor:
                         mlflow.log_metric("output_quality", output_quality_score)
                     mlflow.log_param("end_time", workflow.end_time.isoformat())
     
-    def track_agent_execution(self, agent_name: str, workflow_id: str, duration: float, success: bool, tokens: Optional[Dict[str, int]] = None):
+    def track_agent_execution(self, agent_name: str, workflow_id: str, duration: float, success: bool, tokens: Optional[Dict[str, int]] = None) -> None:
         """Track agent execution metrics."""
         with self.lock:
             if agent_name not in self.agent_metrics:
@@ -233,7 +239,7 @@ class PerformanceMonitor:
             return wrapper
         return decorator
     
-    def track_task_execution(self, task_name: str, workflow_id: str, duration: float, success: bool):
+    def track_task_execution(self, task_name: str, workflow_id: str, duration: float, success: bool) -> None:
         """Track task execution metrics."""
         with self.lock:
             if task_name not in self.task_metrics:

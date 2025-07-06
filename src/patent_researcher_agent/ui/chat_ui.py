@@ -15,7 +15,7 @@ logger = setup_logger(__name__)
 
 def run(query: str):
     """
-    Run the patent research with validation, monitoring, and error handling.
+    Run the patent research with validation, monitoring, error handling, and evaluation.
     """
     logger.info(f"Starting patent research for query: {query}")
     
@@ -35,6 +35,7 @@ def run(query: str):
     
     crew_obj = PatentInnovationCrew()
     workflow_id = None
+    agent_outputs = {}
     try:
         # Start workflow monitoring
         workflow_id = crew_obj.start_workflow(query)
@@ -64,7 +65,47 @@ def run(query: str):
         
         # Process and validate the result
         final_result = process_result(result)
+
         yield final_result
+        
+        # Perform evaluation
+        try:
+            import asyncio
+            from ..utils.evaluation import evaluator
+            
+            # Extract agent outputs from execution summary if available
+            if execution_summary and "agent_executions" in execution_summary:
+                agent_executions = execution_summary["agent_executions"]
+                if isinstance(agent_executions, dict):
+                    # If agent_executions is a dict, iterate through its values
+                    for agent_exec in agent_executions.values():
+                        if isinstance(agent_exec, dict):
+                            agent_name = agent_exec.get("agent_name", "unknown")
+                            output = agent_exec.get("result", "")
+                            agent_outputs[agent_name] = output
+                elif isinstance(agent_executions, list):
+                    # If agent_executions is a list, iterate directly
+                    for agent_exec in agent_executions:
+                        if isinstance(agent_exec, dict):
+                            agent_name = agent_exec.get("agent_name", "unknown")
+                            output = agent_exec.get("result", "")
+                            agent_outputs[agent_name] = output
+            
+            # Run evaluation asynchronously
+            evaluation = asyncio.run(evaluator.evaluate_workflow(
+                workflow_id=workflow_id,
+                user_input=query,
+                agent_outputs=agent_outputs,
+                final_output=final_result
+            ))
+            
+            logger.info(f"Evaluation completed for workflow {workflow_id} - Overall score: {evaluation.overall_score:.2f}")
+            
+        except Exception as eval_error:
+            logger.error(f"Evaluation failed for workflow {workflow_id}: {str(eval_error)}")
+            # Continue without evaluation if it fails
+        
+        
         
     except Exception as e:
         logger.error(f"Error during crew execution: {str(e)}")

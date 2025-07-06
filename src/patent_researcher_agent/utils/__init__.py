@@ -11,6 +11,7 @@ from .health_check import HealthChecker
 from .workflow_tracker import register_workflow, unregister_workflow, is_workflow_active, get_workflow_status
 
 from .metrics_persistence import MetricsPersistence
+from .evaluation import PatentResearchEvaluator, evaluator, WorkflowEvaluation, EvaluationResult
 
 __all__ = [
     "setup_logger",
@@ -31,6 +32,9 @@ __all__ = [
     "unregister_workflow",
     "is_workflow_active",
     "get_workflow_status",
-
     "MetricsPersistence",
+    "PatentResearchEvaluator",
+    "evaluator",
+    "WorkflowEvaluation",
+    "EvaluationResult",
 ]

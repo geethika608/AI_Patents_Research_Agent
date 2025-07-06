@@ -1,6 +1,6 @@
 # Patent Research AI Agent Documentation
 
-Welcome to the comprehensive documentation for the Patent Research AI Agent - a production-ready AI system for patent research and analysis.
+Comprehensive documentation for the Patent Research AI Agent - a production-ready AI system for patent research and analysis.
 
 ## 📚 Documentation Overview
 
