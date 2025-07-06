@@ -16,6 +16,7 @@ services:
       - ../knowledge:/app/knowledge
       - ../mlartifacts:/app/mlartifacts
       - ../mlruns:/app/mlruns
+      - ../logs:/app/logs
     restart: unless-stopped
 
   mlflow:

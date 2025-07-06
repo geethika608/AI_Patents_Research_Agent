@@ -75,10 +75,10 @@ format: ## Format code
 	isort src/patent_researcher_agent/
 
 docker-build: ## Build Docker image
-	docker build -t patent-researcher-agent .
+	docker build -t patent-researcher-agent ./docker
 
 docker-run: ## Run Docker container
-	docker run -p 7860:7860 patent-researcher-agent
+	docker run -p 7860:7860 patent-researcher-agent/docker
 
 test-metrics: ## Test metrics generation
 	@echo "🧪 Testing metrics generation..."

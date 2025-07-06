@@ -8,19 +8,26 @@ RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and install Python dependencies
-COPY pyproject.toml uv.lock ./
-RUN pip install uv && uv pip install -e .
+# Install uv
+RUN pip install uv
 
-# Copy source code
+# Copy project files
+COPY pyproject.toml uv.lock ./
 COPY src/ ./src/
 
+# Create virtual environment and install dependencies
+RUN uv venv && \
+    . .venv/bin/activate && \
+    uv pip install -e .
+
 # Create necessary directories
-RUN mkdir -p memory output knowledge mlartifacts mlruns
+RUN mkdir -p memory output knowledge mlartifacts mlruns logs
 
 # Set environment variables
 ENV PYTHONPATH=/app/src
 ENV PYTHONUNBUFFERED=1
+ENV VIRTUAL_ENV=/app/.venv
+ENV PATH="/app/.venv/bin:$PATH"
 
 # Expose port
 EXPOSE 7860
