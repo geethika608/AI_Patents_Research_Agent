@@ -144,7 +144,7 @@ uv pip freeze                  # Show requirements
 
 ```bash
 # Start all services including monitoring
-docker-compose -f docker/docker-compose.yml -f docker-compose.monitoring.yml up -d
+docker-compose -f docker/docker-compose.yml -f docker/docker-compose.monitoring.yml up -d
 ```
 
 ### Access Monitoring Dashboards
