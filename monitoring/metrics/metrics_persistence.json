@@ -1,19 +1,19 @@
 {
-  "timestamp": 1751817394.512181,
+  "timestamp": 1752311418.270051,
   "metrics": [
     {
       "name": "python_gc_objects_collected_total",
       "labels": {
         "generation": "0"
       },
-      "value": 10106.0
+      "value": 15285.0
     },
     {
       "name": "python_gc_objects_collected_total",
       "labels": {
         "generation": "1"
       },
-      "value": 1808.0
+      "value": 3959.0
     },
     {
       "name": "python_gc_objects_collected_total",
@@ -48,14 +48,14 @@
       "labels": {
         "generation": "0"
       },
-      "value": 1378.0
+      "value": 1396.0
     },
     {
       "name": "python_gc_collections_total",
       "labels": {
         "generation": "1"
       },
-      "value": 125.0
+      "value": 126.0
     },
     {
       "name": "python_gc_collections_total",
@@ -89,7 +89,7 @@
         "agent_name": "fetcher_agent",
         "status": "success"
       },
-      "value": 64.84961485862732
+      "value": 26.563236236572266
     },
     {
       "name": "patent_agent_execution_duration_seconds_count",
@@ -105,7 +105,7 @@
         "agent_name": "analyzer_agent",
         "status": "success"
       },
-      "value": 54.54043984413147
+      "value": 25.130704879760742
     },
     {
       "name": "patent_agent_execution_duration_seconds_count",
@@ -121,7 +121,7 @@
         "agent_name": "reporter_agent",
         "status": "success"
       },
-      "value": 36.12164115905762
+      "value": 18.995736837387085
     },
     {
       "name": "patent_agent_execution_duration_seconds_created",
@@ -129,7 +129,7 @@
         "agent_name": "fetcher_agent",
         "status": "success"
       },
-      "value": 1751817214.2210848
+      "value": 1752295927.163431
     },
     {
       "name": "patent_agent_execution_duration_seconds_created",
@@ -137,7 +137,7 @@
         "agent_name": "analyzer_agent",
         "status": "success"
       },
-      "value": 1751817214.222817
+      "value": 1752295940.939399
     },
     {
       "name": "patent_agent_execution_duration_seconds_created",
@@ -145,7 +145,7 @@
         "agent_name": "reporter_agent",
         "status": "success"
       },
-      "value": 1751817214.224973
+      "value": 1752295950.204858
     },
     {
       "name": "patent_agent_executions_total",
@@ -153,7 +153,7 @@
         "agent_name": "fetcher_agent",
         "status": "success"
       },
-      "value": 15.0
+      "value": 2.0
     },
     {
       "name": "patent_agent_executions_total",
@@ -161,7 +161,7 @@
         "agent_name": "analyzer_agent",
         "status": "success"
       },
-      "value": 15.0
+      "value": 2.0
     },
     {
       "name": "patent_agent_executions_total",
@@ -169,7 +169,7 @@
         "agent_name": "reporter_agent",
         "status": "success"
       },
-      "value": 15.0
+      "value": 2.0
     },
     {
       "name": "patent_agent_executions_created",
@@ -177,7 +177,7 @@
         "agent_name": "fetcher_agent",
         "status": "success"
       },
-      "value": 1751817214.230067
+      "value": 1752295927.1635342
     },
     {
       "name": "patent_agent_executions_created",
@@ -185,7 +185,7 @@
         "agent_name": "analyzer_agent",
         "status": "success"
       },
-      "value": 1751817214.231387
+      "value": 1752295940.939467
     },
     {
       "name": "patent_agent_executions_created",
@@ -193,7 +193,7 @@
         "agent_name": "reporter_agent",
         "status": "success"
       },
-      "value": 1751817214.2327318
+      "value": 1752295950.204928
     },
     {
       "name": "patent_task_execution_duration_seconds_count",
@@ -209,7 +209,7 @@
         "status": "success",
         "task_name": "fetch_patents"
       },
-      "value": 72.63496804237366
+      "value": 30.16197919845581
     },
     {
       "name": "patent_task_execution_duration_seconds_count",
@@ -225,7 +225,7 @@
         "status": "success",
         "task_name": "analyze_trends"
       },
-      "value": 60.18614101409912
+      "value": 28.57542371749878
     },
     {
       "name": "patent_task_execution_duration_seconds_count",
@@ -241,7 +241,7 @@
         "status": "success",
         "task_name": "generate_report"
       },
-      "value": 42.317561626434326
+      "value": 22.00278615951538
     },
     {
       "name": "patent_task_execution_duration_seconds_created",
@@ -249,7 +249,7 @@
         "status": "success",
         "task_name": "fetch_patents"
       },
-      "value": 1751817214.239481
+      "value": 1752295927.169912
     },
     {
       "name": "patent_task_execution_duration_seconds_created",
@@ -257,7 +257,7 @@
         "status": "success",
         "task_name": "analyze_trends"
       },
-      "value": 1751817214.242757
+      "value": 1752295940.944731
     },
     {
       "name": "patent_task_execution_duration_seconds_created",
@@ -265,7 +265,7 @@
         "status": "success",
         "task_name": "generate_report"
       },
-      "value": 1751817214.2465138
+      "value": 1752295950.2121441
     },
     {
       "name": "patent_task_executions_total",
@@ -273,7 +273,7 @@
         "status": "success",
         "task_name": "fetch_patents"
       },
-      "value": 15.0
+      "value": 2.0
     },
     {
       "name": "patent_task_executions_total",
@@ -281,7 +281,7 @@
         "status": "success",
         "task_name": "analyze_trends"
       },
-      "value": 15.0
+      "value": 2.0
     },
     {
       "name": "patent_task_executions_total",
@@ -289,7 +289,7 @@
         "status": "success",
         "task_name": "generate_report"
       },
-      "value": 15.0
+      "value": 2.0
     },
     {
       "name": "patent_task_executions_created",
@@ -297,7 +297,7 @@
         "status": "success",
         "task_name": "fetch_patents"
       },
-      "value": 1751817214.254708
+      "value": 1752295927.169984
     },
     {
       "name": "patent_task_executions_created",
@@ -305,7 +305,7 @@
         "status": "success",
         "task_name": "analyze_trends"
       },
-      "value": 1751817214.256814
+      "value": 1752295940.944799
     },
     {
       "name": "patent_task_executions_created",
@@ -313,13 +313,13 @@
         "status": "success",
         "task_name": "generate_report"
       },
-      "value": 1751817214.258946
+      "value": 1752295950.212215
     },
     {
       "name": "patent_workflow_duration_seconds_count",
       "labels": {
         "status": "success",
-        "workflow_id": "9d8d8e66-545b-4ccc-8f32-c8a04b7b3fd4"
+        "workflow_id": "21aadbbd-01d1-4adf-ab68-30f62cd63b46"
       },
       "value": 1.0
     },
@@ -327,15 +327,15 @@
       "name": "patent_workflow_duration_seconds_sum",
       "labels": {
         "status": "success",
-        "workflow_id": "9d8d8e66-545b-4ccc-8f32-c8a04b7b3fd4"
+        "workflow_id": "21aadbbd-01d1-4adf-ab68-30f62cd63b46"
       },
-      "value": 37.821449995040894
+      "value": 34.05274987220764
     },
     {
       "name": "patent_workflow_duration_seconds_count",
       "labels": {
         "status": "success",
-        "workflow_id": "d9ca47e0-7eb3-4d32-93c6-4228e57a541f"
+        "workflow_id": "7a105ef1-7232-4006-ac79-d3fe8c61b1b3"
       },
       "value": 1.0
     },
@@ -343,151 +343,31 @@
       "name": "patent_workflow_duration_seconds_sum",
       "labels": {
         "status": "success",
-        "workflow_id": "d9ca47e0-7eb3-4d32-93c6-4228e57a541f"
+        "workflow_id": "7a105ef1-7232-4006-ac79-d3fe8c61b1b3"
       },
-      "value": 38.9817578792572
-    },
-    {
-      "name": "patent_workflow_duration_seconds_count",
-      "labels": {
-        "status": "success",
-        "workflow_id": "fc7da469-9ef1-4b1e-998e-e7b4a7602646"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_duration_seconds_sum",
-      "labels": {
-        "status": "success",
-        "workflow_id": "fc7da469-9ef1-4b1e-998e-e7b4a7602646"
-      },
-      "value": 36.672646045684814
-    },
-    {
-      "name": "patent_workflow_duration_seconds_count",
-      "labels": {
-        "status": "success",
-        "workflow_id": "6f50df94-5ce4-4f59-ad0f-d415ea2db803"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_duration_seconds_sum",
-      "labels": {
-        "status": "success",
-        "workflow_id": "6f50df94-5ce4-4f59-ad0f-d415ea2db803"
-      },
-      "value": 30.250794172286987
-    },
-    {
-      "name": "patent_workflow_duration_seconds_count",
-      "labels": {
-        "status": "success",
-        "workflow_id": "835b461f-09b1-47f4-a868-763765457194"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_duration_seconds_sum",
-      "labels": {
-        "status": "success",
-        "workflow_id": "835b461f-09b1-47f4-a868-763765457194"
-      },
-      "value": 38.788434982299805
-    },
-    {
-      "name": "patent_workflow_duration_seconds_count",
-      "labels": {
-        "status": "success",
-        "workflow_id": "b6b6e4b7-f92e-4901-aeea-e5bf9693c6a1"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_duration_seconds_sum",
-      "labels": {
-        "status": "success",
-        "workflow_id": "b6b6e4b7-f92e-4901-aeea-e5bf9693c6a1"
-      },
-      "value": 33.14814901351929
-    },
-    {
-      "name": "patent_workflow_duration_seconds_count",
-      "labels": {
-        "status": "success",
-        "workflow_id": "8ad62f3e-6fd6-4248-996b-556d4377f804"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_duration_seconds_sum",
-      "labels": {
-        "status": "success",
-        "workflow_id": "8ad62f3e-6fd6-4248-996b-556d4377f804"
-      },
-      "value": 26.601054906845093
+      "value": 46.77692985534668
     },
     {
       "name": "patent_workflow_duration_seconds_created",
       "labels": {
         "status": "success",
-        "workflow_id": "9d8d8e66-545b-4ccc-8f32-c8a04b7b3fd4"
+        "workflow_id": "21aadbbd-01d1-4adf-ab68-30f62cd63b46"
       },
-      "value": 1751817214.269618
+      "value": 1752295950.230227
     },
     {
       "name": "patent_workflow_duration_seconds_created",
       "labels": {
         "status": "success",
-        "workflow_id": "d9ca47e0-7eb3-4d32-93c6-4228e57a541f"
+        "workflow_id": "7a105ef1-7232-4006-ac79-d3fe8c61b1b3"
       },
-      "value": 1751817214.274496
-    },
-    {
-      "name": "patent_workflow_duration_seconds_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "fc7da469-9ef1-4b1e-998e-e7b4a7602646"
-      },
-      "value": 1751817214.280071
-    },
-    {
-      "name": "patent_workflow_duration_seconds_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "6f50df94-5ce4-4f59-ad0f-d415ea2db803"
-      },
-      "value": 1751817214.2858188
-    },
-    {
-      "name": "patent_workflow_duration_seconds_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "835b461f-09b1-47f4-a868-763765457194"
-      },
-      "value": 1751817214.292099
-    },
-    {
-      "name": "patent_workflow_duration_seconds_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "b6b6e4b7-f92e-4901-aeea-e5bf9693c6a1"
-      },
-      "value": 1751817214.298784
-    },
-    {
-      "name": "patent_workflow_duration_seconds_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "8ad62f3e-6fd6-4248-996b-556d4377f804"
-      },
-      "value": 1751817320.510619
+      "value": 1752296112.741345
     },
     {
       "name": "patent_workflow_executions_total",
       "labels": {
         "status": "success",
-        "workflow_id": "1b840b6e-3089-4db1-9ce5-1a3a4801331e"
+        "workflow_id": "21aadbbd-01d1-4adf-ab68-30f62cd63b46"
       },
       "value": 1.0
     },
@@ -495,71 +375,7 @@
       "name": "patent_workflow_executions_total",
       "labels": {
         "status": "success",
-        "workflow_id": "d75bd2af-5e8f-4fd3-bf50-728936658cbc"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_executions_total",
-      "labels": {
-        "status": "success",
-        "workflow_id": "8e5c908c-2021-49ab-84be-91040b2c1401"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_executions_total",
-      "labels": {
-        "status": "success",
-        "workflow_id": "9d8d8e66-545b-4ccc-8f32-c8a04b7b3fd4"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_executions_total",
-      "labels": {
-        "status": "success",
-        "workflow_id": "d9ca47e0-7eb3-4d32-93c6-4228e57a541f"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_executions_total",
-      "labels": {
-        "status": "success",
-        "workflow_id": "fc7da469-9ef1-4b1e-998e-e7b4a7602646"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_executions_total",
-      "labels": {
-        "status": "success",
-        "workflow_id": "6f50df94-5ce4-4f59-ad0f-d415ea2db803"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_executions_total",
-      "labels": {
-        "status": "success",
-        "workflow_id": "835b461f-09b1-47f4-a868-763765457194"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_executions_total",
-      "labels": {
-        "status": "success",
-        "workflow_id": "b6b6e4b7-f92e-4901-aeea-e5bf9693c6a1"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_executions_total",
-      "labels": {
-        "status": "success",
-        "workflow_id": "8ad62f3e-6fd6-4248-996b-556d4377f804"
+        "workflow_id": "7a105ef1-7232-4006-ac79-d3fe8c61b1b3"
       },
       "value": 1.0
     },
@@ -567,198 +383,29 @@
       "name": "patent_workflow_executions_created",
       "labels": {
         "status": "success",
-        "workflow_id": "1b840b6e-3089-4db1-9ce5-1a3a4801331e"
+        "workflow_id": "21aadbbd-01d1-4adf-ab68-30f62cd63b46"
       },
-      "value": 1751817214.323647
+      "value": 1752295950.230298
     },
     {
       "name": "patent_workflow_executions_created",
       "labels": {
         "status": "success",
-        "workflow_id": "d75bd2af-5e8f-4fd3-bf50-728936658cbc"
+        "workflow_id": "7a105ef1-7232-4006-ac79-d3fe8c61b1b3"
       },
-      "value": 1751817214.327261
-    },
-    {
-      "name": "patent_workflow_executions_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "8e5c908c-2021-49ab-84be-91040b2c1401"
-      },
-      "value": 1751817214.330899
-    },
-    {
-      "name": "patent_workflow_executions_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "9d8d8e66-545b-4ccc-8f32-c8a04b7b3fd4"
-      },
-      "value": 1751817214.334543
-    },
-    {
-      "name": "patent_workflow_executions_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "d9ca47e0-7eb3-4d32-93c6-4228e57a541f"
-      },
-      "value": 1751817214.338208
-    },
-    {
-      "name": "patent_workflow_executions_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "fc7da469-9ef1-4b1e-998e-e7b4a7602646"
-      },
-      "value": 1751817214.341878
-    },
-    {
-      "name": "patent_workflow_executions_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "6f50df94-5ce4-4f59-ad0f-d415ea2db803"
-      },
-      "value": 1751817214.345574
-    },
-    {
-      "name": "patent_workflow_executions_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "835b461f-09b1-47f4-a868-763765457194"
-      },
-      "value": 1751817214.349308
-    },
-    {
-      "name": "patent_workflow_executions_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "b6b6e4b7-f92e-4901-aeea-e5bf9693c6a1"
-      },
-      "value": 1751817214.353091
-    },
-    {
-      "name": "patent_workflow_executions_created",
-      "labels": {
-        "status": "success",
-        "workflow_id": "8ad62f3e-6fd6-4248-996b-556d4377f804"
-      },
-      "value": 1751817320.5107222
+      "value": 1752296112.741416
     },
     {
       "name": "patent_workflow_success_rate",
       "labels": {
-        "workflow_id": "7bc6fb1d-cc77-4a68-9d76-39375da7b7f9"
+        "workflow_id": "21aadbbd-01d1-4adf-ab68-30f62cd63b46"
       },
       "value": 1.0
     },
     {
       "name": "patent_workflow_success_rate",
       "labels": {
-        "workflow_id": "4545015c-7162-4788-82de-ebf7641e97a1"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "ea5be889-6cbd-43d8-8b35-0eca8946d81e"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "fcaaeb11-9b08-4fb2-aaf5-7079b351a34a"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "f2298212-e2c6-4f7e-9337-69234be5263b"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "f8448fc2-d669-47d7-8b8f-cebe89d539e9"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "7de5ddd4-8a48-4bfc-beff-fbef9c706560"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "1b840b6e-3089-4db1-9ce5-1a3a4801331e"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "d75bd2af-5e8f-4fd3-bf50-728936658cbc"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "8e5c908c-2021-49ab-84be-91040b2c1401"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "9d8d8e66-545b-4ccc-8f32-c8a04b7b3fd4"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "d9ca47e0-7eb3-4d32-93c6-4228e57a541f"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "fc7da469-9ef1-4b1e-998e-e7b4a7602646"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "6f50df94-5ce4-4f59-ad0f-d415ea2db803"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "835b461f-09b1-47f4-a868-763765457194"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "b6b6e4b7-f92e-4901-aeea-e5bf9693c6a1"
-      },
-      "value": 1.0
-    },
-    {
-      "name": "patent_workflow_success_rate",
-      "labels": {
-        "workflow_id": "8ad62f3e-6fd6-4248-996b-556d4377f804"
+        "workflow_id": "7a105ef1-7232-4006-ac79-d3fe8c61b1b3"
       },
       "value": 1.0
     }
