@@ -183,7 +183,6 @@ class PatentInnovationCrew:
             "embedder": {
                "provider": "openai",
                "config": {
-                "api_key": os.getenv("OPENAI_API_KEY"),
                 "model": "text-embedding-3-small"
                }
             },
