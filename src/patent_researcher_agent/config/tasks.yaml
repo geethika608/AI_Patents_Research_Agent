@@ -1,40 +1,54 @@
 fetch_patents:
   description: >
     Fetch and summarize patents filed in the last 3 years for {research_area}.
-    Return structured list with title, abstract, detailed summary, year, inventors, assignee, classification.
+    Return structured list with title, summary, year, assignee.
     
     CRITICAL INSTRUCTIONS:
-    1. FIRST check if patents for {research_area} are already available in memory or context
-    2. If patents are found in memory/context, use those and DO NOT perform any new searches
-    3. Only use the Conditional Patent Search tool if no patents are found in memory/context
-    4. Always prioritize existing data over new searches to avoid redundancy
+    1. FIRST check the "Useful context" section in the context for patents data related to {research_area}
+    2. VALIDATE that any patents found are actually relevant to {research_area} by checking:
+       - Patent title contains is entirely related to {research_area} or is a variation of it
+       - Patent summary is relevant to {research_area}
+    3. If VALID (a minimum of 2-3) patents are found in "Useful context", extract and format them into the required JSON structure
+    4. If NO VALID patents or empty patents array are found in "Useful context", you MUST use the SerperDevTool to search
+    5. Extract key information from ALL patents found in search results (aim for 2-3 patents)
+    6. If any field is missing, use "Unknown" or "Not specified" as default
+    7. You must use the SerperDevTool if none or empty patents array are found.
+    8. CRITICAL: Validate relevance to {research_area} before using any patents from context
+    9. CRITICAL: You must return only the final patents JSON object, nothing else.
   expected_output: >
-    List of patent entries, each as a dict with metadata fields.
+    JSON object with patents array containing structured patent entries.
   agent: fetcher_agent
   output_file: output/patents_data.json
 
 analyze_innovation:
   description: >
-    Analyze the patent entries to identify emerging topics, key innovation areas,
-    trending keywords, top assignees, and forward-looking innovation ideas.
+    Analyze patent data to identify trends, keywords and innovation clusters.
     
     CRITICAL INSTRUCTIONS:
-    1. FIRST check if trends for {research_area} are already available in memory or context
-    2. If trends are found in memory/context, use those and DO NOT perform any new searches
-    3. Only use the Conditional Patent Search tool if additional information is needed and not available in memory
-    4. Always prioritize existing analysis over new searches to avoid redundancy
+    1. FIRST check if trends for {research_area} are already available in "Useful context"
+    2. If trends are found in "Useful context", use those and DO NOT perform any new searches
+    3. If multiple trends are found in "Useful context", use only the one that is related to {research_area} and ignore the rest
+    4. Only use the SerperDevTool if trends related to {research_area} are not available in "Useful context"
+    5. Analyze the patent data provided by the fetcher agent
+    6. Extract emerging topics and technical domains from the patents
+    6. Identify important keywords showing recent growth
+    7. Group related inventions into innovation clusters
+    8. List top assignees (organizations) with the most activity
+    9. Return exactly in TrendSummary format with: topics, keywords, innovation_clusters
   expected_output: >
-    JSON summary: {topics: [...], keywords: [...], innovation_clusters: [...], insights: [...]}
+    TrendSummary with structured trend analysis data.
   agent: analyzer_agent
   output_file: output/trends_summary.json
 
 generate_report:
   description: >
     Using the trend summary, prepare a polished report that includes:
-    1. summary of key findings,
-    2. detailed innovation insights along with the patents that support the insights,
-    3. strategic recommendations for future technology investment.
+    1. return only 3 sections and nothing else:
+       - summary of key findings
+       - detailed innovation insights along with the patents that support the insights
+       - strategic recommendations for future technology investment
+    2. keep the report short and concise, and avoid repeating the same information.
   expected_output: >
-    Final report in Markdown, suitable for business stakeholders.
+    Final report only in Markdown, suitable for business stakeholders.
   agent: reporter_agent
   output_file: output/innovation_report.md

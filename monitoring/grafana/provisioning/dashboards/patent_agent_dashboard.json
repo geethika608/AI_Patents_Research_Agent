@@ -1,0 +1,88 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Patent Research AI Agent Dashboard",
+    "tags": ["patent", "ai", "crewai"],
+    "style": "dark",
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Agent Execution Duration",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(patent_agent_execution_duration_seconds_sum[5m]) / rate(patent_agent_execution_duration_seconds_count[5m])",
+            "legendFormat": "{{agent_name}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Agent Executions Total",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "patent_agent_executions_total",
+            "legendFormat": "{{agent_name}} - {{status}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Task Execution Duration",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(patent_task_execution_duration_seconds_sum[5m]) / rate(patent_task_execution_duration_seconds_count[5m])",
+            "legendFormat": "{{task_name}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "Workflow Success Rate",
+        "type": "gauge",
+        "targets": [
+          {
+            "expr": "patent_workflow_success_rate",
+            "legendFormat": "{{workflow_id}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "API Request Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(patent_api_requests_total[5m])",
+            "legendFormat": "{{api_name}} - {{status}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 16}
+      },
+      {
+        "id": 6,
+        "title": "Error Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(patent_agent_errors_total[5m])",
+            "legendFormat": "{{agent_name}} - {{error_type}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 16}
+      }
+    ],
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "10s"
+  }
+} 
